@@ -25,7 +25,7 @@
     h1 {
       font-family: 'Pretendard';
       font-size: 48px; 
-      font-weight: bold;
+      font-weight: 700;
       height: 57px;
       top: 235px;
       left: 489px;
@@ -49,20 +49,20 @@
       margin: 8px 0% 0px 4px;
       background: #ffffff;
       font-size: 18px;
-      font-weight: medium;
+      font-weight: 500;
       font-family: 'Pretendard';
     }
    button {
   font-family: 'Pretendard';
   width: 370px;          
   height: 48px;          
-  margin: 20px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
   border-radius: 16px;
   display: block;          
   border: none;               
   border-radius: 16px;   
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   background: #e5e5e5;
   color: #999999;
   text-align: center;      
