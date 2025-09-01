@@ -1,0 +1,92 @@
+.admin-header {
+  font-family: 'Pretendard';
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 54px;
+  gap: 226.12px;
+  position: absolute;
+  height: 99px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-bottom: 1.125px solid #CDCDCD;
+}
+
+.logo-placeholder {
+  width: 157.5px;
+  height: 45px;
+  background: #C4C4C4;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 9px 9px 27px;
+  gap: 18px;
+  width: 177px;
+  height: 56px;
+  background: #F3F3F3;
+  border-radius: 9px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.admin-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  width: 100.5px;
+  height: 38px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.hospital-name {
+  margin:0px;
+  width: 100.5px;
+  height: 19px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.75px;
+  line-height: 19px;
+  /* 상자 높이와 동일 */
+  align-items: center;
+  text-align: right;
+  color: #808080;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.admin-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  width: 100.5px;
+  height: 38px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.admin-toggle{
+  width: 22.5px;
+  font-size: 13.5px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-color: #F3F3F3;
+}
