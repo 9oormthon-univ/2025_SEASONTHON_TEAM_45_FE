@@ -1,15 +1,15 @@
   body {
-      font-family: 'Arial', sans-serif;
       background: #f4f4f4;
+      width: 1280px;
+      height: 720px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      align-items: center;  
+      margin: 40px 120px 20px;
     }
     .container {
       text-align: center;
-      width: 350px;
+      width: 360px;
     }
   .header-bar {
   width: 500px;      
@@ -17,38 +17,49 @@
   top: 153px;
   left: 390px;
   background: #c4c4c4;
-  margin: -20px 0px -50px;
+  margin: -50px 0px -50px;
   align-items: center;     
   transform: translate(-14%, -50%);
 }
 
     h1 {
-      font-family: pretendard;
+      font-family: 'Pretendard';
       font-size: 48px; 
       font-weight: bold;
+      height: 57px;
+      top: 235px;
+      left: 489px;
       color: #000000;
+      margin: center;
+      line-height: 100%;
+      letter-spacing: -3%;
+      text-align: center;
+      vertical-align: middle;
     }
-    input {
+    input { 
+      top: 340px;
+      left: 480px;
       border-radius: 16px;
       border-style: solid;
       border-color: #999999;
       width: 320px;
       height: fixed 48px;
       gap: 10px;
-      padding: 16px;
-      margin: 4px 1px;
+      padding: 16px;  
+      margin: 4px 0px 0px 4px;
       background: #ffffff;
       font-size: 18px;
-      font-family: pretendard;
+      font-weight: medium;
+      font-family: 'Pretendard';
     }
    button {
-  font-family: pretendard;
+  font-family: 'Pretendard';
   width: 370px;          
   height: 48px;          
-  margin: 20px 5px 100px -8px;
+  margin: 20px 0px 0px 0px;
   border-radius: 16px;
   display: block;          
-  border: 0;               
+  border: none;               
   border-radius: 16px;   
   font-size: 20px;
   font-weight: bold;
