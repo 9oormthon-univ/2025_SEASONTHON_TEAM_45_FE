@@ -1,4 +1,4 @@
- const username = document.getElementById("username");
+    const username = document.getElementById("username");
     const password = document.getElementById("password");
     const loginBtn = document.getElementById("loginBtn");
 
@@ -20,3 +20,8 @@
         alert("로그인 시도: " + username.value);
       }
     });
+    password.addEventListener("keypress", (e) => {
+  if (e.key === "Enter" && loginBtn.classList.contains("active")) {
+    loginBtn.click();
+  }
+});
