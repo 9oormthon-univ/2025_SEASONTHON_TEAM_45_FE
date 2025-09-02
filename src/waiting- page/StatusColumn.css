@@ -1,0 +1,130 @@
+.status-column{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 349.33px;
+    height:612px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    max-height: 612px; 
+}
+
+.status-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 301.33px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.status-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    margin: 0;
+    width:97px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.status-title-circle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 88px;
+    height: 33px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.status-circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.status-type-pre-visit .status-circle {
+  background:#FFA600
+}
+.status-type-on-call .status-circle {
+  background:#0048FF;
+}
+.status-type-visited .status-circle {
+  background:#FF0000;
+}
+
+.status-title{
+    width: 68px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin:0;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.status-sub{
+    width: 97px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #858585;
+    margin:0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sorted-button{
+    border-color: #D1D4DA;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.user-card-list{
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+
+
+
+
+
+
+
+
+
+
+
