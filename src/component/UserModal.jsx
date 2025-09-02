@@ -1,5 +1,5 @@
 import React from 'react';
-import './UserModal.css'; 
+import './UserModal.css'; // 모달 스타일링을 위한 CSS 파일
 
 const UserModal = ({ onClose, user }) => {
   if (!user) {
