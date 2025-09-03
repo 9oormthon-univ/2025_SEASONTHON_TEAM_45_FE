@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   display: flex;
+width: 1440px;
+padding-bottom: 56px;
+flex-direction: column;
+align-items: center;
+}
+
+/* 헤더 스타일 */
+.header { 
+    font-family: 'Pretendard';
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 54px;
+  gap: 226.12px;
+  position: absolute;
+  height: 99px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-bottom: 1.125px solid #CDCDCD;
+    } 
+    .main-text { 
+    color: #000000; 
+    font-size: 15.75px; 
+    font-style: medium; 
+    font-weight: 500; 
+    font-family: 'pretendard';
+     } 
+     .dropdown-btn { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 18px; 
+    padding: 9px 9px 9px 27px; 
+    background: #f3f3f3; 
+    border-radius: 9px; 
+    border: none; cursor: pointer; 
+    width: 177px; 
+    height: 56px; 
+    }
+     .dropdown-btn .text-box { 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;
+    flex: 1;
+    overflow: hidden;
+    } 
+    .dropdown-btn .sub-text { 
+    color: #808080;
+    font-size: 13px;
+    font-weight: 500; 
+    } 
+    .dropdown-btn .main-text{ 
+    color: #000; 
+    font-size: 15.75px; 
+    font-weight: 500; 
+    line-height: normal;
+    font-style: normal; 
+    font-family: 'Pretendard';
+    text-align: right;
+    width: 100%;
+    }
+    .dropdown-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    right: 50px;
+    background: #FFFFFF; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    list-style: none;
+    width: 180px;
+    margin-top: 5px; 
+    padding: 0px;
+    z-index: 999
+    }
+    .dropdown-menu li {
+    padding: 10px; 
+    cursor: pointer; 
+    }
+    .dropdown-menu li:hover { 
+    background: #F0F0F0; 
+    } 
+/* 메인 컨테이너 */
+.main-container {
+display: flex;
+width: 1080px;
+padding: 24px 0px 99px 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+margin: 99px 180px 56px 180px;
+}
+/* 뒤로가기 링크 */
+.breadcrumb {
+    margin: 12px 0px 12px 0px;
+}
+.back-link {
+color: #686868;
+font-family: 'Pretendard';
+font-size: 20px;
+font-style: normal;
+font-weight: 600;   
+line-height: normal;
+transition: color 0.3s;
+text-decoration: none;
+}
+
+.back-link:hover {
+    color: #007bff;
+}
+
+/* 섹션 스타일 */
+.admin-page-info {
+display: flex;
+height: 149px;
+justify-content: center;
+flex-direction: column;
+padding: 24px;
+align-items: start;
+align-self: stretch;
+border-radius: 24px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: #FFF;
+box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.30);
+}
+
+.section-title1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.section-title2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.section-description {
+color: #858585;
+font-family: 'Pretendard';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+/* 진료과 목록 */
+.medicaldepartment{
+display: flex;
+height: 584px;
+width: 1080px;
+padding: 24px;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex: 1 0 0;
+margin-top: 1px 16px;
+border-radius: 24px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: #FFF;
+box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.30)
+}
+.department-item {
+color: #000;
+font-family: 'Pretendard';
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+height: 80px;
+padding: 16px 0;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+width: 100%;
+border-bottom: 1px solid #e0e0e0;
+box-sizing: border-box;
+}
+.department-item:hover {
+      background-color: #f9f9f9;
+    box-shadow: none; 
+}
+
+/* 적용 버튼 */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+.back-link {
+    display: flex;             
+    align-items: center;      
+    gap: 8px;                
+    color: #686868;            
+    font-family: 'Pretendard'; 
+    font-size: 20px;          
+    line-height: normal;
+    font-weight: 600;          
+    text-decoration: none;     /* 밑줄 제거 */
+    transition: color 0.3s;    /* 색상 변경 시 부드러운 효과 */
+}
+
+.back-link:hover {
+    color: #007bff;            /* 마우스를 올렸을 때 색상 변경 */
+}
+.apply-button {
+display: flex;
+width: 156px;
+height: 48px;
+padding: 12px 27px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #FFFFFF;
+border-radius: 8px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: #13D094;
+transition: background-color 0.3s, transform 0.1s;
+}
+
+.apply-button:hover {
+    background-color: #27ae60;
+}
+
+.apply-button:active {
+    transform: translateY(1px);
+}
