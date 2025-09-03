@@ -24,7 +24,7 @@ document.addEventListener('click', () => {
     const applyButton = document.querySelector('.apply-button');
     if (applyButton) {
         applyButton.addEventListener('click', () => {
-            alert('변경사항이 성공적으로 적용되었습니다.');
+            alert('변경사항이 적용되었습니다.');
         });
     }
 });
