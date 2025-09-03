@@ -7,9 +7,9 @@
   padding: 24px 0px;
   gap: 16px;
   position: absolute;
-  width: 1080px;
+  width: 1900px;
   height: 825px;
-  left: calc(50% - 1080px/2);
+  left: calc(50% - 1900px/2);
   top: 99px;
 }
 
@@ -21,8 +21,11 @@
   align-items: center;
   padding: 24px;
   gap: 8px;
-  width: 1080px;
-  height: 149px;
+  width: 1900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top:40px;  
+  height: 180px;
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
@@ -39,7 +42,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 8px;
-  width: 118px;
+  width: 150px;
   height: 69px;
   flex: none;
   order: 0;
@@ -48,20 +51,23 @@
 
 .waiting-info p{
   margin:0px;
+  margin-left: 10px;
   font-size:16px;
   color:#888
 }
 
 .waiting-title{
   margin:0px;
+  margin-left: 10px;
   font-size: 32px;
   font-style: bold;
 }
 
 .waiting-date{
-  font-size:20px;
-  font-style: medium;
+  font-size:32px;
+  font-style: bold;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 .status-list{
@@ -69,12 +75,13 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 16px;
-  width: 1080px;
+  justify-content: space-between;
+  width: 1900px;
   height: 612px;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  gap:20px;
 }
 

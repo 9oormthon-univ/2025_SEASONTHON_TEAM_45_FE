@@ -1,0 +1,425 @@
+
+.date-box{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 1900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  height: 180px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
+  border-radius: 24px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.date-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 400px;
+  height: 69px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.date-info p{
+  margin:0px;
+  margin-left: 10px;
+  font-size:16px;
+  color:#888
+}
+
+.date-title{
+  margin:0px;
+  margin-left: 10px;
+  font-size: 32px;
+  font-style: bold;
+}
+
+.waiting-date{
+  font-size:32px;
+  font-style: bold;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+
+
+/* DatePicker 입력 필드 */
+.react-datepicker-wrapper .react-datepicker__input-container input {
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Pretendard', sans-serif;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  width: 160px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+/* 포커스 시 강조 */
+.react-datepicker-wrapper .react-datepicker__input-container input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* 팝업 달력 전체 */
+.react-datepicker {
+  width: 320px !important;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  background-color: #fff;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+/* 헤더: 월/년과 화살표 */
+.react-datepicker__header {
+  background-color: #f0f4f8;
+  border-bottom: 1px solid #ddd;
+  border-radius: 12px 12px 0 0;
+  padding: 12px 0;
+}
+
+/* 현재 달 표시 */
+.react-datepicker__current-month {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 화살표 */
+.react-datepicker__navigation {
+  top: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.react-datepicker__navigation:hover {
+  background-color: #f0f0f0;
+}
+
+/* 요일 표시 */
+.react-datepicker__day-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* 날짜 */
+.react-datepicker__day {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  margin: 0;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e8f5e9;
+  cursor: pointer;
+}
+
+/* 선택된 날짜 */
+.react-datepicker__day--selected {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(76, 175, 80, 0.4);
+}
+
+/* 오늘 날짜 강조 */
+.react-datepicker__day--today {
+  border: 1px solid #4caf50;
+  font-weight: 600;
+}
+
+/* 팝업 달력 영역 */
+.react-datepicker-popper {
+  width: 340px !important;
+  font-size: 16px !important;
+}
+
+.back-page{
+  /* Frame 2612796 */
+
+background-color:  #f0f0f0;
+color: #686868;   
+/* 오토레이아웃 */
+margin-top:50px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+width: 150px;
+height: 56px;
+
+
+/* 내부 오토레이아웃 */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.system-box{
+  display: flex; /* 자식 요소들을 가로로 나열 */
+  flex-direction: row; /* 기본값이라 생략 가능하지만 명시적으로 작성 */
+  gap: 80px; /* 두 요소 사이의 간격 설정 (선택 사항) */
+  justify-content: space-between; /* 요소들을 양 끝으로 분산 정렬 (선택 사항) */
+  align-items: flex-start; /* 세로축 정렬 (선택 사항) */
+}
+.status-column{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap:20px;
+    height:600px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    max-height: 612px; 
+}
+
+.status-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;
+    height: 56px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    margin-top:20px;
+    flex-grow: 0;
+}
+
+.status-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    margin: 0;
+    margin-top:20px;
+    width:97px;
+    height: 56px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.status-title-circle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 200px;
+    margin-left: 5px;
+    height: 33px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.status-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.status-type-pre-visit .status-circle {
+  background:#FFA600
+}
+.status-type-on-call .status-circle {
+  background:#0048FF;
+}
+.status-type-visited .status-circle {
+  background:#FF0000;
+}
+
+.status-title{
+    width: 100px;
+    height: 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.status-sub{
+    width: 97px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;p{
+    font-size: 22px;
+    font-style: medium;
+    font-weight: 500;
+}
+
+.user-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: calc(100% - 40px);
+    height: 84px;
+    border-bottom: 1px solid #DADADA;
+    flex: none;
+    order: 0;
+    box-sizing: border-box;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 20px;
+}
+
+.user-box{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+margin: 0 auto;
+width: 30px;
+height: 52px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin:0;
+
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap:10px;
+    width: 70px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 30px;
+}
+
+.user-appointment{
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 168px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #A4A4A4;
+    margin-left: 30px;
+}
+.user-appointment p{
+    margin:0;
+}
+
+user-area{
+    width:300px;
+
+}
+.call-button{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 16px;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-right: 50px;
+    width: 80px;
+    height: 50px;
+    background: #E5FFF7;
+    border: 1px solid #13D094;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color:black;
+    font-size: 18px;
+}
+    align-items: center;
+    color: #858585;
+    margin:0;
+    padding-left: 45px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.sorted-button{
+    border-color: #D1D4DA;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.user-card-list{
+    overflow-y: auto;
+    overflow-x: hidden; 
+    font-size:24px;
+}
+
+
+
+
+
+
+
+
+
+
+

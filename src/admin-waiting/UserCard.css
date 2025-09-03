@@ -1,5 +1,5 @@
 p{
-    font-size: 20px;
+    font-size: 22px;
     font-style: medium;
     font-weight: 500;
 }
@@ -10,33 +10,27 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0px;
-    gap: 4px;
-    width: 301.33px;
+    gap: 24px;
+    width: calc(100% - 40px);
     height: 84px;
     border-bottom: 1px solid #DADADA;
     flex: none;
     order: 0;
+    box-sizing: border-box;
     align-self: stretch;
     flex-grow: 0;
+    margin: 10px 20px;
 }
 
 .user-box{
-    /* Frame 2612262 */
-
-/* 오토레이아웃 */
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 4px;
-
 margin: 0 auto;
-width: 201px;
+width: 30px;
 height: 52px;
-
-
-/* 내부 오토레이아웃 */
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -45,24 +39,17 @@ margin:0;
 }
 
 .user-info{
-    /* Frame 2612261 */
-
-/* 오토레이아웃 */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap:10px;
-
-width: 162px;
-height: 24px;
-
-
-/* 내부 오토레이아웃 */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap:10px;
+    width: 370px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 30px;
 }
 
 .user-appointment{
@@ -78,10 +65,15 @@ flex-grow: 0;
     order: 1;
     flex-grow: 0;
     color: #A4A4A4;
-
+    margin-left: 30px;
 }
 .user-appointment p{
     margin:0;
+}
+
+user-area{
+    width:300px;
+
 }
 .call-button{
     box-sizing: border-box;
@@ -92,8 +84,10 @@ flex-grow: 0;
     padding: 13px 16px;
     gap: 10px;
     margin: 0 auto;
-    width: 64px;
-    height: 40px;
+    margin-top: 5px;
+    margin-right: 50px;
+    width: 80px;
+    height: 50px;
     background: #E5FFF7;
     border: 1px solid #13D094;
     border-radius: 8px;
@@ -101,4 +95,5 @@ flex-grow: 0;
     order: 1;
     flex-grow: 0;
     color:black;
+    font-size: 18px;
 }

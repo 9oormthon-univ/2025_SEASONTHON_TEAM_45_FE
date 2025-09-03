@@ -1,0 +1,78 @@
+p{
+    font-size: 22px;
+    font-style: medium;
+    font-weight: 500;
+}
+
+.user-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: calc(100% - 40px);
+    height: 84px;
+    border-bottom: 1px solid #DADADA;
+    flex: none;
+    order: 0;
+    box-sizing: border-box;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 20px;
+}
+
+.user-box{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+margin: 0 auto;
+width: 700px;
+height: 52px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin:0;
+
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap:10px;
+    width: 200px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 30px;
+}
+
+.user-appointment{
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 168px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #A4A4A4;
+    margin-left: 30px;
+}
+.user-appointment p{
+    margin:0;
+}
+
+.user-area{
+    width:700px;
+    display: flex;
+
+}
