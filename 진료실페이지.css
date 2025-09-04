@@ -10,6 +10,7 @@ width: 1440px;
 padding-bottom: 56px;
 flex-direction: column;
 align-items: center;
+background: #F0F0F0; 
 }
 
 /* 헤더 스타일 */
