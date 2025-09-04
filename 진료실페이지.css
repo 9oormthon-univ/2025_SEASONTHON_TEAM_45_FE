@@ -216,12 +216,12 @@ box-sizing: border-box;
     font-size: 20px;          
     line-height: normal;
     font-weight: 600;          
-    text-decoration: none;     /* 밑줄 제거 */
-    transition: color 0.3s;    /* 색상 변경 시 부드러운 효과 */
+    text-decoration: none;    
+    transition: color 0.3s;   
 }
 
 .back-link:hover {
-    color: #007bff;            /* 마우스를 올렸을 때 색상 변경 */
+    color: #007bff;           
 }
 .apply-button {
 display: flex;
