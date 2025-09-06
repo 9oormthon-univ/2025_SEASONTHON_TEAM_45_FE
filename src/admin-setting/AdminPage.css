@@ -1,0 +1,153 @@
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 9px 9px 9px 27px;
+  background: #f3f3f3;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  width: 177px;
+  height: 56px;
+}
+
+.dropdown-btn .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  flex: 1;
+  overflow: hidden;
+}
+
+.dropdown-btn .sub-text {
+  color: #808080;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.dropdown-btn .main-text {
+  color: #000;
+  font-size: 15.75px;
+  font-weight: 500;
+  line-height: normal;
+  font-style: normal;
+  font-family: 'Pretendard';
+  text-align: right;
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  width: 180px;
+  margin-top: 5px;
+  padding: 0px;
+  z-index: 999
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #F0F0F0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start !important;
+  width: 1900px;
+  max-width: 100%;
+  gap: 24px;
+  padding: 0 180px;
+  height: auto;
+}
+
+.admin-card {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: calc(100%-24px);
+}
+
+.card__heading {
+  height:130px;
+  font-size: 48px;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  height:130px;
+  font-size: 36px !important;
+}
+
+.admin-card--large {
+  margin-bottom: 40px;
+  line-height: 12px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  border-width: 100px;
+  display: flex;
+  padding: 24px;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: #FFFFFF;
+  box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.30);
+}
+
+.card-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  line-height: 10px;
+  justify-content: end;
+}
+
+.admin-card--small {
+  margin-bottom: 2px;
+  align-self: stretch;
+  line-height: 10px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1 0 0;
+  padding: 24px;
+  align-items: flex-start;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.30);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit;
+}
+
+.card__text {
+  color: #858585;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.admin-card--small:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
