@@ -1,33 +1,45 @@
 import './UserCardRow.css';
 
-function UserCard({ user, onCall, onCardClick }) {
-  const showCallButton = user.status === '대기 중';
-  
+function calculateAge(birthDateStr) {
+  const today = new Date();
+  const birthDate = new Date(birthDateStr);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+function UserRowCard({ user,onCardClick }) {
+  const formattedTime = (() => {
+    const timeParts = user.appointmentTime.split(':');
+    return `${timeParts[0]}시 ${timeParts[1]}분`;
+  })();
+  const formattedDate = user.appointmentDate; // "2024-12-31"
+  const age = calculateAge(user.memberBirthDate);
+  const genderShort =
+    user.gender === '남성' ? '(남)' :
+    user.gender === '여성' ? '(여)' :
+    '';
+
   return (
-    <div className="user-card" >
-      <div className="user-box">
-        <div className="user-area" onClick={() => onCardClick(user)}>
-          <div className="user-info">
-            <p>{user.name}</p>
-            <p> {user.age}세</p>
-            <p> ({user.gender})</p>
+    <div className="date-user-card">
+      <div className="date-user-box">
+        <div className="date-user-area" onClick={() => onCardClick(user)}>
+          <div className="date-user-info">
+            <p>{user.memberName}</p>
+            <p>만 {age}세</p>
+            <p>{genderShort}</p>
           </div>
-          <div className="user-appointment">
-            <p>{user.appointmentTime}</p>
+          <div className="date-user-appointment">
+            <p>{formattedTime}</p>
             <p>{user.department}</p>
           </div>
-      </div>
-      {showCallButton && (
-      <button
-        onClick={() => onCall(user.id)}
-        className="call-button"
-      >
-        호출
-      </button>
-    )}
+        </div>
       </div>
     </div>
   );
 }
 
-export default UserCard;
+export default UserRowCard;
