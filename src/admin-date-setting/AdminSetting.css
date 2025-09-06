@@ -1,3 +1,4 @@
+/* 뒤로가기 버튼 */
 .back-page{
   margin-top:40px!important; 
   margin-bottom: 10px !important; 
@@ -10,12 +11,12 @@
   height: 60px;
   margin-bottom: 0;
   background: #f3f3f3 !important; 
-  /* 내부 오토레이아웃 */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
+/* 날짜, 시간 관리 탑 블럭 - date-box, date-info, date-title, waiting-date */
 .date-box{
   box-sizing: border-box;
   display: flex;
@@ -39,6 +40,7 @@
   flex-grow: 0;
 }
 
+/* 날짜, 시간 관리 블럭 */
 .date-info{
   display: flex;
   flex-direction: column;
@@ -59,15 +61,17 @@
   color:#888
 }
 
+/* 타이틀 - 날짜, 시간 관리 */
 .date-title{
   margin:0px;
-  margin-left: 10px;
-  font-size: 32px;
+  margin-left: 20px;
+  font-size: 48px !important;
   font-style: bold;
 }
 
+/* DatePicker */
 .waiting-date{
-  font-size:32px;
+  font-size:48px;
   font-style: bold;
   font-weight: 500;
 }
@@ -91,7 +95,6 @@
   border-color: #4caf50;
   box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
 }
-
 
 .react-datepicker__header {
   background-color: #f0f4f8;
@@ -129,7 +132,6 @@
   color: #555;
 }
 
-
 .react-datepicker__day {
   width: 38px;
   height: 38px;
@@ -143,7 +145,6 @@
   background-color: #e8f5e9;
   cursor: pointer;
 }
-
 
 .react-datepicker__day--selected {
   background-color: #4caf50;
@@ -172,7 +173,7 @@
   transition: all 0.3s ease;
 }
 
-
+/* 날짜, 시간 관리 하단 구성  */
 .system-box {
   display: flex;
   flex-direction: row; 

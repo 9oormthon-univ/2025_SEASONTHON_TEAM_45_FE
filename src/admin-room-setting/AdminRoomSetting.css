@@ -1,0 +1,375 @@
+/* ================================
+   전체 레이아웃
+================================ */
+.room-container {
+    width: 1900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* ================================
+   헤더 관련
+================================ */
+.admin-department-top{
+    width:100%;
+}
+
+/* ================================
+   모달 관련
+================================ */
+.modal-body p{
+    font-size: 18px;
+
+}
+
+.modal-body{
+    margin-top: 40px;
+}
+.room-modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.room-modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 40px;
+    width: 610px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+.room-modal h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;
+}
+
+.room-modal input,
+.room-modal textarea{
+    font-family: 'Pretendard';
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 20px;
+    height:60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.room-modal .modal-close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: url('../assets/close.png') no-repeat center / contain;
+    cursor: pointer;
+}
+
+.room-edit-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: auto;
+}
+
+.room-modal-footer {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 끝 정렬 */
+  gap: 20px;                /* 버튼 간격 */
+  margin-top: 30px;         /* 위쪽 여백 */
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.room-modal-footer .modal-edit-btn {
+  background-color: #0048FF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.room-modal-footer .modal-delete-btn {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.room-modal-footer button:hover {
+  opacity: 0.9; /* 살짝 hover 효과 */
+}
+/* ================================
+   뒤로가기
+================================ */
+.breadcrumb {
+    margin-top: 40px;
+}
+
+/* ================================
+   섹션 스타일
+================================ */
+
+.modal-header h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 300px;
+    height: 38px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    font-size: 32px;
+}
+.admin-page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 120px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #FFF;
+    box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
+}
+
+.section-title1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.section-title2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 200px;
+    margin-left: 5px;
+    height: 33px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.section-description {
+    color: #858585;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ================================
+   진료과 관리
+================================ */
+.admin-setting-department {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1900px;
+    max-height: 700px;
+    padding: 24px;
+    margin-top: 16px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #FFF;
+    box-shadow: 1px 1px 20px 1px rgba(196, 196, 196, 0.3);
+}
+
+.department-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10px;
+    width: 98%;
+    padding: 16px 0;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.department-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* ================================
+   추가 버튼
+================================ */
+.add-department {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.add-button {
+    padding: 12px 24px;
+    background-color: #13D094;
+    color: #FFF;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.add-button:hover {
+    background-color: #27ae60;
+}
+
+.add-button:active {
+    transform: translateY(1px);
+}
+
+/* ================================
+   적용 버튼
+================================ */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.room-add-button {
+    margin-top: 10px;
+    display: flex;
+    width: 200px;
+    height: 48px;
+    margin-right: 50px;
+    padding: 12px 27px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #13D094;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.room-add-button:hover {
+    background-color: #27ae60;
+}
+
+.room-add-button:active {
+    transform: translateY(1px);
+}
+
+/* ================================
+   공통 텍스트
+================================ */
+.main-text { 
+    color: #000000; 
+    font-size: 15.75px; 
+    font-weight: 500; 
+    font-family: 'Pretendard';
+} 
+
+.dropdown-btn { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 18px; 
+    padding: 9px 9px 9px 27px; 
+    background: #f3f3f3; 
+    border-radius: 9px; 
+    border: none; 
+    cursor: pointer; 
+    width: 177px; 
+    height: 56px; 
+}
+
+.dropdown-btn .text-box { 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;
+    flex: 1;
+    overflow: hidden;
+} 
+
+.dropdown-btn .sub-text { 
+    color: #808080;
+    font-size: 13px;
+    font-weight: 500; 
+} 
+
+.department-name{
+    font-size: 24px;
+}
+.dropdown-btn .main-text{ 
+    color: #000; 
+    font-size: 15.75px; 
+    font-weight: 500; 
+    line-height: normal;
+    font-style: normal; 
+    text-align: right;
+    width: 100%;
+}
+.admin-department-info {
+    width: 100%;
+    max-height: 400px;       
+    overflow-y: auto;        
+    overflow-x: hidden;      
+    padding-right: 8px;      
+    display: flex;
+    flex-direction: column;
+    gap: 12px;               
+    box-sizing: border-box;  
+}
+.dropdown-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    right: 50px;
+    background: #FFFFFF; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    list-style: none;
+    width: 180px;
+    margin-top: 5px; 
+    padding: 0px;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.dropdown-menu li:hover { 
+    background: #F0F0F0; 
+} 

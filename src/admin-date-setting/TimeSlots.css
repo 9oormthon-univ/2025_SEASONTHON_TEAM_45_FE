@@ -1,5 +1,6 @@
-/* TimeSlots.css */
 .time-slot-container {
+  display: flex;
+  flex-direction: column;
   background: #fff;
   padding: 20px;
   border-radius: 24px;
@@ -42,10 +43,10 @@
   opacity: 0.8;
 }
 
-.legend {
+.time-legend {
   display: flex;
   gap: 16px;
-  width: 320px;
+  width: 700px;
   height: 32px;
   margin-left:40px;
   margin-top:25px;
@@ -78,7 +79,6 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top:40px;
   margin-right: 20px;
   margin-bottom: 20px;
   width:156px;
@@ -90,78 +90,55 @@
 }
 
 
-.status-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 4px;
-    margin: 0;
-    margin-top:20px;
-    width:500px;
-    height: 56px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.time-status-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  margin: 0;
+  margin-top:20px;
+  width:500px;
+  height: 56px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 20px;
 }
 
-.status-title-circle{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    width: 400px;
-    margin-left: 5px;
-    height: 33px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-.status-circle{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-}
-.status-type-pre-visit .status-circle {
-  background:#FFA600
-}
-.status-type-on-call .status-circle {
-  background:#0048FF;
-}
-.status-type-visited .status-circle {
-  background:#FF0000;
+
+.time-status-title{
+  width: 300px;
+  height: 29px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  margin-left:20px;
+  margin-bottom: 0;
+  margin-top:50px;
+  flex-grow: 0;
 }
 
-.status-title{
-    width: 300px;
-    height: 29px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 29px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.status-sub{
+.time-status-sub{
     width: 500px;
     height: 19px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
     display: flex;
     align-items: center;
     color: #858585;
     margin:0;
+    
+    margin-top: 10px;
     padding-left: 45px;
     flex: none;
     order: 1;
@@ -170,6 +147,7 @@
 
 .time-group{
   margin-left: 40px;
+  margin-top: 10px;
 }
 
 .time-group h4{
@@ -178,7 +156,45 @@
 
 .button-box {
   display: flex;
-  justify-content: flex-end; /* Flex 컨테이너의 끝(오른쪽)으로 정렬 */
-  width: 100%; /* 부모 요소의 너비를 채워야 정렬이 제대로 작동합니다. */
+  justify-content: flex-end;
+  width: 100%; 
   margin-right:20px;
+}
+
+.time-chip-style {
+  box-sizing: border-box;
+  width: 200px; 
+  height: 50px; 
+  padding: 12px 24px; 
+  margin: 0;
+  display: flex;
+  margin-top:50px;
+  margin-right: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 99px;
+  background-color: #FFFFFF;
+  color: #000000; 
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.61a.5.5 0 0 1 .382-.879h9.914a.5.5 0 0 1 .382.879l-4.796 5.53a.5.5 0 0 1-.765-.001z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+}
+
+.time-slot-top-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-slot-bottom-area{
+  display: flex;
+  justify-content: space-between;
 }

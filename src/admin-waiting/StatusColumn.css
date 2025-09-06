@@ -1,4 +1,4 @@
-.status-column{
+.waiting-status-column{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
     height: 56px;
     flex: none;
     order: 0;
+    margin-left: 10px;
     align-self: stretch;
     flex-grow: 0;
 }
@@ -53,10 +54,9 @@
     align-items: center;
     padding: 0px;
     gap: 8px;
-    width: 200px;
+    width: 400px;
     margin-left: 5px;
     height: 33px;
-    flex: none;
     order: 0;
     flex-grow: 0;
 }
@@ -85,7 +85,6 @@
     line-height: 29px;
     display: flex;
     align-items: center;
-    padding-left: 20px;
     color: #000000;
     flex: none;
     order: 0;
@@ -118,16 +117,5 @@
 .user-card-list{
     overflow-y: auto;
     overflow-x: hidden; 
-    width: 570px;
+    width: 550px !important;
 }
-
-
-
-
-
-
-
-
-
-
-

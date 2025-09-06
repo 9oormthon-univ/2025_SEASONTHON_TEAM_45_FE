@@ -17,7 +17,7 @@
 }
 
 .logo-placeholder {
-  background-image: url('./assets/hospitalLogo.png');
+  background-image: url('../assets/hospitalLogo.png');
   width: 157.5px;
   height: 45px;
   flex: none;
@@ -102,25 +102,240 @@
   border: none;
   cursor: pointer;
   font-size: 18px;
+  color: #000; 
 }
 
-.dropdown-menu {
+.admin-toggle:focus,
+.admin-toggle:active {
+  outline: none;         /* 포커스/클릭 시 점선 제거 */
+  background: none;      /* 클릭 시 배경색 제거 */
+  color: #797878; 
+}
+
+.admin-header {
+  font-family: 'Pretendard';
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 54px;
+  gap: 226.12px;
   position: absolute;
-  top: 30px;  /* 버튼 바로 밑에 나오도록 */
-  right: 0;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  width: 150px;
-  z-index: 1000;
+  height: 99px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border-bottom: 1.125px solid #CDCDCD;
 }
 
+.logo-placeholder {
+  background-image: url('../assets/care-free-pass-header-logo.png');
+  width: 400px;
+  height: 40px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 9px 9px 27px;
+  gap: 18px;
+  width: 177px;
+  height: 56px;
+  background: #F3F3F3;
+  border-radius: 9px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.admin-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  width: 100.5px;
+  height: 38px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.hospital-name {
+  margin:0px;
+  width: 100.5px;
+  height: 19px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.75px;
+  line-height: 19px;
+  /* 상자 높이와 동일 */
+  align-items: center;
+  text-align: right;
+  color: #808080;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.admin-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  width: 100.5px;
+  height: 38px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.admin-name p{
+  color:#000;
+}
+
+.admin-toggle{
+  width: 22.5px;
+  font-size: 13.5px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-color: #F3F3F3;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.admin-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #000; 
+}
+
+.admin-toggle:focus,
+.admin-toggle:active {
+  outline: none;         /* 포커스/클릭 시 점선 제거 */
+  background: none;      /* 클릭 시 배경색 제거 */
+  color: #797878; 
+}
+
+.header-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  position: absolute;
+  width: 269px;
+  height: 250px;
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.1)) 
+          drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.12));
+
+  /* 부모 바로 밑으로 위치 조정 */
+  top: 140%;    /* 부모 높이 바로 아래 */
+  left: 0;      /* 부모 왼쪽 정렬 */
+  transform: translateX(-200px);
+  margin-top: 4px; /* 살짝 띄우고 싶으면 */
+  z-index: 9999;
+}
+
+/* menu-item: 메뉴 항목 스타일 */
 .menu-item {
-  padding: 10px;
+  flex: 1;
+  width: 100%;
+  align-items: center; 
   cursor: pointer;
 }
 
 .menu-item:hover {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+
+.header-dropdown-menu a {
+  text-decoration: none;       /* 밑줄 제거 */
+  color: inherit;              /* 부모 색상 상속 */
+  padding: 10px 15px;          /* 클릭 영역 확보 */
+  cursor: pointer;
+  display: block;              /* 블록 요소로 클릭 영역 넓힘 */
+  transition: background-color 0.2s, color 0.2s; /* 색상만 부드럽게 변화 */
+  transform: none;             /* 크기 변화를 방지 */
+  outline: none;               /* 클릭 시 점선 제거 */
+  border: none;                /* 테두리 제거 */
+  box-sizing: border-box;      /* 패딩 포함 크기 계산 */
+}
+
+/* 호버/클릭 시 스타일 */
+.header-dropdown-menu a:hover,
+.header-dropdown-menu a:active,
+.header-dropdown-menu a:focus {
+  background-color: #f0f0f0;  /* 배경색만 변화 */
+  color: inherit;              /* 글자색 유지 */
+  transform: none;             /* 크기 변화 없음 */
+  outline: none;               /* 점선 제거 */
+  border: none;                /* 테두리 없음 */
+}
+
+
+
+/* menu-item: 메뉴 항목 스타일 */
+.menu-item {
+  width: 100%;        /* 부모 너비 꽉 채움 */
+  padding: 12px 20px; /* 클릭 영역 확보 */
+  cursor: pointer;
+  display: block;     /* 블록으로 클릭 영역 넓힘 */
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+.menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+.header-dropdown-menu a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 12px 20px;
+  transform: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* 호버/클릭 */
+.header-dropdown-menu a:hover,
+.header-dropdown-menu a:focus,
+.header-dropdown-menu a:active,
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+  background-color: #f0f0f0;
+  transform: none;
+  outline: none;
+  border: none;
+}
+
+.menu-item.active {
+  background-color: #f0f0f0; /* 현재 페이지 강조 배경색 */
+  font-weight: 600;           /* 글자 두껍게 */
+  color: #000;                /* 글자 색 강조 */
 }
