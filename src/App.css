@@ -1,3 +1,26 @@
 body{
   background-color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: black;
+}
+
+button{
+  background: #d1d1d1;
+  color: #555555;
+}
+
+button:active {
+  background: #999999;
+  color: #ffffff;
+  transform: scale(0.97);
+}
+
+input{
+  font-family: 'Pretendard';
+  font-size: 22px;
+  font-style: Medium;
 }
