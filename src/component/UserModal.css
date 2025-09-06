@@ -1,5 +1,5 @@
 .modal-overlay {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,34 +11,84 @@
     z-index: 1000;
 }
 
+.modal-circle-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-type-pre-visit .status-circle {
+    background: #FFA600;
+}
+
+.status-type-on-call .status-circle {
+    background: #0048FF;
+}
+
+.status-type-visited .status-circle {
+    background: #FF0000;
+}
+
 .modal-content {
     background: white;
     padding: 30px;
     border-radius: 12px;
     position: relative;
     width: 90%;
-    max-width: 450px;
+    max-width: 689px;
+    height: 342px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     animation: fadeIn 0.3s ease-out;
+    padding: 50px;
 }
 
-.modal-content h3{
+.modal-content h3 {
     font-size: 25px;
 }
 
 .modal-close-button {
+    margin: 20px;
+    width: 48px;
+    height: 75px;
     position: absolute;
     top: 15px;
     right: 15px;
     border: none;
     background: transparent;
-    font-size: 24px;
+    background-image: url('../assets/close.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
-    color: #888;
+    outline: none;
 }
 
-.modal-close-button:hover {
-    color: #333;
+.modal-close-button:focus,
+.modal-close-button:active {
+    background-image: url('../assets/close.png');
+    background-color: transparent;
+    background-size: cover;
+    outline: none;
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 350px;
+    height: 38px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.modal-title p {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -50,4 +100,64 @@
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.modal-area {
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    margin-top: 40px;
+}
+
+.modal-right-area,
+.modal-left-area {
+    display: flex;
+    width: 300px;
+    height: 90%;
+    gap: 48px;
+    flex-direction: column;
+}
+
+.modal-info-title {
+    width: 150px;
+    height: 19px;
+    color: #858585;
+    font-size: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.modal-info {
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: bold;
+}
+
+.modal-part {
+    width: 100%;
+    height: 100px;
+    gap: 40px;
+}
+
+.modal-title-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-button-area {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 55%;
+}
+
+.delete-patient {
+    background-color: rgb(94, 6, 6);
+    color: white;
+    margin-right:100px;
 }
