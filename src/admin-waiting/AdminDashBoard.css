@@ -1,6 +1,4 @@
-
-.patient-list{
-  font-family: 'Pretendard';
+.dashboard{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -13,7 +11,7 @@
   top: 99px;
 }
 
-.waiting-box{
+.board-waiting-box{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -36,41 +34,35 @@
   flex-grow: 0;
 }
 
-.waiting-info{
+.board-waiting-info{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
-  width: 150px;
-  height: 69px;
+  width: 300px;
+  height: 60px;
+  margin-left:40px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.waiting-info p{
+.board-waiting-title{
   margin:0px;
   margin-left: 10px;
-  font-size:16px;
-  color:#888
-}
-
-.waiting-title{
-  margin:0px;
-  margin-left: 10px;
-  font-size: 32px;
+  font-size: 48px;
   font-style: bold;
 }
 
-.waiting-date{
+.board-waiting-info p{
+  display: none;
+}
+
+.board-waiting-date{
   font-size:32px;
   font-style: bold;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
-.status-list{
+.board-status-list{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -84,4 +76,77 @@
   flex-grow: 0;
   gap:20px;
 }
+.board-left-area{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.board-right-area{
+  display: flex;
+  flex-direction: row;
+  gap:50px;
+  align-items: center;
+}
 
+.right-area button,
+.right-area .dropdown-content select {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  min-width: 300px; 
+  text-align: left; 
+}
+
+
+.right-area .dropdown-content {
+  width: 100%;
+  height: 50px;
+}
+
+
+.right-area .dropdown-content select {
+-webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none; 
+background-repeat: no-repeat;
+background-position: right 15px center;
+background-size: 16px;
+}
+
+
+.chip-style {
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  padding: 12px 24px; 
+  margin: 0 auto;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 99px;
+  background-color: #FFFFFF;
+  color: #000000; 
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.61a.5.5 0 0 1 .382-.879h9.914a.5.5 0 0 1 .382.879l-4.796 5.53a.5.5 0 0 1-.765-.001z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center; 
+  background-size: 16px;
+}
+
+.chip-style:hover {
+  background-color: #F8F9FA;
+  border-color: #AAB0BB;
+}
