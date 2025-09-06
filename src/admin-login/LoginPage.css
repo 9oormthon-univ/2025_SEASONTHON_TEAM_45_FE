@@ -6,10 +6,12 @@
   padding: 0;
 }
 
-.login-bar {
-  width: 500px;
-  height: 69px;
-  background: #C4C4C4;
+.login-logo {
+  width: 520px;
+  height: 420px;
+  background-image: url('../assets/care-free-pass-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login-title {
@@ -17,7 +19,7 @@
   font-weight: 700;
   height: 57px;
   align-items: center;
-  color: #000000;
+  color: #818584;
   line-height: 100%;
   letter-spacing: -3%;
   text-align: center;
@@ -35,14 +37,18 @@
 .login-container input {
   border-radius: 16px;
   border-style: solid;
-  border-color: #999999;
   width: 450px;
   height: 40px;
   padding: 16px;
   margin: 8px 0; 
-  background: #ffffff;
+  background: #ffffff !important;
   font-size: 18px;
+  color:black !important;
   font-weight: 500;
+}
+
+.login-container :active {
+  background: #ffffff !important;
 }
 
 .login-btn {

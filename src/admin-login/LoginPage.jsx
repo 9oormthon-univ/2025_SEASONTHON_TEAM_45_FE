@@ -34,8 +34,8 @@ function LoginPage({ onLoginSuccess }) {
 
   return (
     <div className="login-container">
-      <div className="login-bar"></div>
-      <h1 className="login-title">Partners Page</h1>
+      <div className="login-logo"></div>
+      <h1 className="login-title">관리자 페이지</h1>
       <form onSubmit={handleSubmit}>
         <input 
           id="username"
