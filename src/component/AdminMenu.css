@@ -18,3 +18,16 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+.dropdown-menu {
+  position: absolute; /* 이 속성은 유지 */
+  top: 100;
+  left: 0;
+  
+  /* X, Y축으로 위치를 이동 */
+  transform: translate(0, 150px); /* 50px만큼 아래로 이동 */
+  
+  /* ... 나머지 스타일 ... */
+  display: flex;
+  flex-direction: column;
+}
