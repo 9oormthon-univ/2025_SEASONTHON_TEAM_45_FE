@@ -18,7 +18,7 @@ function AdminRoomSetting() {
 
   const hospitalId = 1;
   const BASE_URL = import.meta.env.VITE_REACT_APP_ADMIN_URL;
-  const API_BASE = '${BASE_URL}/admin/hospitals';
+  const API_BASE = `${BASE_URL}/admin/hospitals`;
 
   useEffect(() => {
     const fetchDepartments = async () => {

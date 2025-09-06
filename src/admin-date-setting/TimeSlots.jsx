@@ -13,7 +13,7 @@ const PMSlots = [
   '16:00', '16:30'
 ];
 
-function TimeSlots({ API, token, selectedDate }) {
+function TimeSlots({BASE_URL, token, selectedDate }) {
   const [selectedDepartmentId, setSelectedDepartmentId] = useState(null);
   const [departments, setDepartments] = useState([]);
   const [slots, setSlots] = useState([]);
@@ -69,7 +69,7 @@ function TimeSlots({ API, token, selectedDate }) {
       setDepartments(defaultDepartments);
       console.log('[Fetch Departments] 기본 목록 적용', defaultDepartments);
     }
-  }, [API, token, hospitalId]);
+  }, [BASE_URL, token, hospitalId]);
 
   useEffect(() => { fetchDepartments(); }, [fetchDepartments]);
 
@@ -117,7 +117,7 @@ function TimeSlots({ API, token, selectedDate }) {
       console.error('[Fetch Slots] 오류', error);
       alert('슬롯 조회에 실패했습니다.');
     }
-  }, [selectedDepartmentId, selectedDate, API, token, departments]);
+  }, [selectedDepartmentId, selectedDate, BASE_URL, token, departments]);
 
   useEffect(() => { fetchSlots(); }, [selectedDepartmentId, selectedDate, fetchSlots]);
 
