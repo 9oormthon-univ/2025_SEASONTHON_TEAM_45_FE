@@ -1,33 +1,78 @@
-import { useNavigate } from "react-router-dom";
-import "./AdminMenu.css";
+import { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import "./AdminHeader.css";
 
-const AdminMenu = ({ onClose }) => {
+const AdminHeader = ({ adminName, hospitalName }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation(); // 현재 URL 가져오기
 
-  // 관리자 설정 페이지로 이동
-  const goToAdminSettings = () => {
-    navigate("/admin/settings"); // App.jsx에서 Route로 연결
-    if (onClose) onClose();      // 메뉴 닫기
+  const toggleMenu = (e) => {
+    e.stopPropagation();
+    setIsMenuOpen((prev) => !prev);
   };
 
-  // 로그아웃 처리 후 로그인 페이지로 이동
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (isMenuOpen && !e.target.closest('.dropdown-container')) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [isMenuOpen]);
+
   const handleLogout = () => {
-    localStorage.removeItem("token"); // 로그인 토큰 삭제
+    localStorage.removeItem("token");
     navigate("/login");
-    if (onClose) onClose();           // 메뉴 닫기
   };
 
   return (
-    <div className="dropdown-menu">
-      <div className="menu-item" onClick={goToAdminSettings}>
-        관리자 설정
+    <header className="admin-header">
+      <Link to="/admin/dashboard">
+        <div className="logo-placeholder"></div>
+      </Link>
+
+      <div className="right-section">
+        <div className="admin-info">
+          <h2 className="hospital-name">{hospitalName}</h2>
+          <span className="admin-name">관리자 {adminName}</span>
+        </div>
+
+        <div className="dropdown-container">
+          <button
+            type="button"
+            className="admin-toggle"
+            onClick={toggleMenu}
+          >
+            ▼
+          </button>
+
+          {isMenuOpen && (
+            <div className="header-dropdown-menu">
+              <Link
+                to="/admin/dashboard"
+                className={`menu-item ${location.pathname === '/admin/dashboard' ? 'active' : ''}`}
+              >
+                대기 목록
+              </Link>
+              <Link
+                to="/admin/settings"
+                className={`menu-item ${location.pathname === '/admin/settings' ? 'active' : ''}`}
+              >
+                관리자 페이지
+              </Link>
+              <Link to="/" className="menu-item" onClick={handleLogout}>
+                로그아웃
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="menu-item" onClick={handleLogout}>
-        로그아웃
-      </div>
-    </div>
+    </header>
   );
 };
 
-export default AdminMenu;
-    
+export default AdminHeader;
