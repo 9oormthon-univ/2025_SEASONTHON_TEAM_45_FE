@@ -6,8 +6,8 @@ import './UserAdminList.css';
 function UserAdminList({ title, users, onCall, onCardClick }) {
   const [sortOrder, setSortOrder] = useState('desc');
   const statusMap = {
-    '내원 전': 'status-type-pre-visit',
-    '대기 중': 'status-type-on-call',
+    '내원전': 'status-type-pre-visit',
+    '대기중': 'status-type-on-call',
     '호출됨': 'status-type-visited',
   };
   
